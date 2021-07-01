@@ -1,0 +1,141 @@
+:root{
+    --clr-primary-300: hsl(31, 77%, 52%);
+    --clr-primary-500: hsl(184, 100%, 22%);
+    --clr-primary-900: hsl(179, 100%, 13%);
+
+    --clr-neutral-100: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-130: hsl(0, 0%, 95%);
+
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-secondary: 'Big Shoulders Display', cursive;
+
+    --fw-primary: 400;
+    --fw-secondary: 700;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    width: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+p{
+    padding: 0;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3{
+    font-weight: var(--fw-secondary);
+    font-family: var(--ff-secondary);
+    color: var(--clr-neutral-130);
+    font-size: 1.7rem;
+}
+
+p{
+    font-weight: var(--fw-primary);
+    font-family: var(--ff-primary);
+    color: var(--clr-neutral-100);
+    line-height: 1.6;
+}
+
+.wrapper{
+    margin: 4rem 1rem;
+    border: 0.1px solid white;
+    border-radius: 25px;
+}
+
+.section{
+    padding: 2.5rem;    
+}
+
+.first{
+    border-radius: 0.5rem 0.5rem 0 0; 
+    background-color: var(--clr-primary-300);
+}
+
+.second{
+    background-color: var(--clr-primary-500);
+}
+
+.third{
+    border-radius: 0 0 0.5rem 0.5rem; 
+    background-color: var(--clr-primary-900);
+}
+
+.btn{
+    padding: 0.7rem 1.8rem;
+    border-radius: 3rem;
+    border: 1px solid white;
+}
+
+.btn-first{
+    color: var(--clr-primary-300);
+}
+
+.btn-second{
+    color: var(--clr-primary-500);
+}
+
+.btn-third{
+    color: var(--clr-primary-900);
+}
+
+.btn:active{
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and (min-width: 1440px){
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .wrapper{
+        display: flex;
+        margin: 4rem 15rem;
+        height: 30rem;
+    }
+
+    .section{
+        padding: 3.3rem;
+    }
+
+    p{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        word-spacing: 0.1rem;
+    }
+
+    .first{
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .third{
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .btn{
+        bottom: 0px;
+        display: flex;
+        margin: 0;
+    }
+
+    
+
+
+}
